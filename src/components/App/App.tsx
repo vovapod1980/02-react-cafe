@@ -4,7 +4,7 @@ import VoteOptions from "../VoteOptions/VoteOptions";
 import VoteStats from "../VoteStats/VoteStats";
 import type { Votes, VoteType } from "../../types/votes";
 import css from "./App.module.css";
-import CafeNotification from "../Notification/Notification";
+import Notification from "../Notification/Notification";
 
 const App = () => {
   const [votes, setVotes] = useState<Votes>({
@@ -48,7 +48,7 @@ const App = () => {
           positiveRate={positiveRate}
         />
       ) : (
-        <CafeNotification />
+        <Notification />
       )}
     </div>
   );
